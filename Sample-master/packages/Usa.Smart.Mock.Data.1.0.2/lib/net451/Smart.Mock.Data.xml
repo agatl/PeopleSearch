@@ -1,0 +1,638 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Smart.Mock.Data</name>
+    </assembly>
+    <members>
+        <member name="T:Smart.Mock.Data.MockColumn">
+             <summary>
+            
+             </summary>
+        </member>
+        <member name="P:Smart.Mock.Data.MockColumn.DataType">
+             <summary>
+            
+             </summary>
+        </member>
+        <member name="P:Smart.Mock.Data.MockColumn.Name">
+             <summary>
+            
+             </summary>
+        </member>
+        <member name="M:Smart.Mock.Data.MockColumn.#ctor(System.Type,System.String)">
+             <summary>
+            
+             </summary>
+             <param name="dataType"></param>
+             <param name="name"></param>
+        </member>
+        <member name="T:Smart.Mock.Data.MockDataReader">
+             <summary>
+            
+             </summary>
+        </member>
+        <member name="P:Smart.Mock.Data.MockDataReader.Depth">
+             <summary>
+            
+             </summary>
+        </member>
+        <member name="P:Smart.Mock.Data.MockDataReader.IsClosed">
+             <summary>
+            
+             </summary>
+        </member>
+        <member name="P:Smart.Mock.Data.MockDataReader.RecordsAffected">
+             <summary>
+            
+             </summary>
+        </member>
+        <member name="P:Smart.Mock.Data.MockDataReader.FieldCount">
+             <summary>
+            
+             </summary>
+        </member>
+        <member name="P:Smart.Mock.Data.MockDataReader.System#Data#IDataRecord#Item(System.Int32)">
+             <summary>
+            
+             </summary>
+             <param name="i"></param>
+             <returns></returns>
+        </member>
+        <member name="P:Smart.Mock.Data.MockDataReader.System#Data#IDataRecord#Item(System.String)">
+             <summary>
+            
+             </summary>
+             <param name="name"></param>
+             <returns></returns>
+        </member>
+        <member name="M:Smart.Mock.Data.MockDataReader.#ctor(Smart.Mock.Data.MockColumn[],System.Collections.Generic.IList{System.Object[]})">
+             <summary>
+            
+             </summary>
+             <param name="columns"></param>
+             <param name="rows"></param>
+        </member>
+        <member name="M:Smart.Mock.Data.MockDataReader.Dispose">
+             <summary>
+            
+             </summary>
+        </member>
+        <member name="M:Smart.Mock.Data.MockDataReader.Close">
+             <summary>
+            
+             </summary>
+        </member>
+        <member name="M:Smart.Mock.Data.MockDataReader.GetSchemaTable">
+             <summary>
+            
+             </summary>
+             <returns></returns>
+        </member>
+        <member name="M:Smart.Mock.Data.MockDataReader.NextResult">
+             <summary>
+            
+             </summary>
+             <returns></returns>
+        </member>
+        <member name="M:Smart.Mock.Data.MockDataReader.Read">
+             <summary>
+            
+             </summary>
+             <returns></returns>
+        </member>
+        <member name="M:Smart.Mock.Data.MockDataReader.IsDBNull(System.Int32)">
+             <summary>
+            
+             </summary>
+             <param name="i"></param>
+             <returns></returns>
+        </member>
+        <member name="M:Smart.Mock.Data.MockDataReader.GetName(System.Int32)">
+             <summary>
+            
+             </summary>
+             <param name="i"></param>
+             <returns></returns>
+        </member>
+        <member name="M:Smart.Mock.Data.MockDataReader.GetDataTypeName(System.Int32)">
+             <summary>
+            
+             </summary>
+             <param name="i"></param>
+             <returns></returns>
+        </member>
+        <member name="M:Smart.Mock.Data.MockDataReader.GetFieldType(System.Int32)">
+             <summary>
+            
+             </summary>
+             <param name="i"></param>
+             <returns></returns>
+        </member>
+        <member name="M:Smart.Mock.Data.MockDataReader.GetOrdinal(System.String)">
+             <summary>
+            
+             </summary>
+             <param name="name"></param>
+             <returns></returns>
+        </member>
+        <member name="M:Smart.Mock.Data.MockDataReader.GetValue(System.Int32)">
+             <summary>
+            
+             </summary>
+             <param name="i"></param>
+             <returns></returns>
+        </member>
+        <member name="M:Smart.Mock.Data.MockDataReader.GetValues(System.Object[])">
+             <summary>
+            
+             </summary>
+             <param name="values"></param>
+             <returns></returns>
+        </member>
+        <member name="M:Smart.Mock.Data.MockDataReader.GetBoolean(System.Int32)">
+             <summary>
+            
+             </summary>
+             <param name="i"></param>
+             <returns></returns>
+        </member>
+        <member name="M:Smart.Mock.Data.MockDataReader.GetByte(System.Int32)">
+             <summary>
+            
+             </summary>
+             <param name="i"></param>
+             <returns></returns>
+        </member>
+        <member name="M:Smart.Mock.Data.MockDataReader.GetBytes(System.Int32,System.Int64,System.Byte[],System.Int32,System.Int32)">
+             <summary>
+            
+             </summary>
+             <param name="i"></param>
+             <param name="fieldOffset"></param>
+             <param name="buffer"></param>
+             <param name="bufferoffset"></param>
+             <param name="length"></param>
+             <returns></returns>
+        </member>
+        <member name="M:Smart.Mock.Data.MockDataReader.GetChar(System.Int32)">
+             <summary>
+            
+             </summary>
+             <param name="i"></param>
+             <returns></returns>
+        </member>
+        <member name="M:Smart.Mock.Data.MockDataReader.GetChars(System.Int32,System.Int64,System.Char[],System.Int32,System.Int32)">
+             <summary>
+            
+             </summary>
+             <param name="i"></param>
+             <param name="fieldoffset"></param>
+             <param name="buffer"></param>
+             <param name="bufferoffset"></param>
+             <param name="length"></param>
+             <returns></returns>
+        </member>
+        <member name="M:Smart.Mock.Data.MockDataReader.GetGuid(System.Int32)">
+             <summary>
+            
+             </summary>
+             <param name="i"></param>
+             <returns></returns>
+        </member>
+        <member name="M:Smart.Mock.Data.MockDataReader.GetInt16(System.Int32)">
+             <summary>
+            
+             </summary>
+             <param name="i"></param>
+             <returns></returns>
+        </member>
+        <member name="M:Smart.Mock.Data.MockDataReader.GetInt32(System.Int32)">
+             <summary>
+            
+             </summary>
+             <param name="i"></param>
+             <returns></returns>
+        </member>
+        <member name="M:Smart.Mock.Data.MockDataReader.GetInt64(System.Int32)">
+             <summary>
+            
+             </summary>
+             <param name="i"></param>
+             <returns></returns>
+        </member>
+        <member name="M:Smart.Mock.Data.MockDataReader.GetFloat(System.Int32)">
+             <summary>
+            
+             </summary>
+             <param name="i"></param>
+             <returns></returns>
+        </member>
+        <member name="M:Smart.Mock.Data.MockDataReader.GetDouble(System.Int32)">
+             <summary>
+            
+             </summary>
+             <param name="i"></param>
+             <returns></returns>
+        </member>
+        <member name="M:Smart.Mock.Data.MockDataReader.GetString(System.Int32)">
+             <summary>
+            
+             </summary>
+             <param name="i"></param>
+             <returns></returns>
+        </member>
+        <member name="M:Smart.Mock.Data.MockDataReader.GetDecimal(System.Int32)">
+             <summary>
+            
+             </summary>
+             <param name="i"></param>
+             <returns></returns>
+        </member>
+        <member name="M:Smart.Mock.Data.MockDataReader.GetDateTime(System.Int32)">
+             <summary>
+            
+             </summary>
+             <param name="i"></param>
+             <returns></returns>
+        </member>
+        <member name="M:Smart.Mock.Data.MockDataReader.GetData(System.Int32)">
+             <summary>
+            
+             </summary>
+             <param name="i"></param>
+             <returns></returns>
+        </member>
+        <member name="T:Smart.Mock.Data.ExecutedCommand">
+             <summary>
+            
+             </summary>
+        </member>
+        <member name="P:Smart.Mock.Data.ExecutedCommand.CommandText">
+             <summary>
+            
+             </summary>
+        </member>
+        <member name="P:Smart.Mock.Data.ExecutedCommand.Parameters">
+             <summary>
+            
+             </summary>
+        </member>
+        <member name="M:Smart.Mock.Data.ExecutedCommand.#ctor(System.String,System.Collections.Generic.IList{Smart.Mock.Data.MockDbParameter})">
+             <summary>
+            
+             </summary>
+             <param name="commandText"></param>
+             <param name="parameters"></param>
+        </member>
+        <member name="T:Smart.Mock.Data.MockDbCommand">
+             <summary>
+            
+             </summary>
+        </member>
+        <member name="P:Smart.Mock.Data.MockDbCommand.ExecutedCommands">
+             <summary>
+            
+             </summary>
+        </member>
+        <member name="P:Smart.Mock.Data.MockDbCommand.Connection">
+             <summary>
+            
+             </summary>
+        </member>
+        <member name="P:Smart.Mock.Data.MockDbCommand.Transaction">
+             <summary>
+            
+             </summary>
+        </member>
+        <member name="P:Smart.Mock.Data.MockDbCommand.CommandText">
+             <summary>
+            
+             </summary>
+        </member>
+        <member name="P:Smart.Mock.Data.MockDbCommand.CommandTimeout">
+             <summary>
+            
+             </summary>
+        </member>
+        <member name="P:Smart.Mock.Data.MockDbCommand.CommandType">
+             <summary>
+            
+             </summary>
+        </member>
+        <member name="P:Smart.Mock.Data.MockDbCommand.Parameters">
+             <summary>
+            
+             </summary>
+        </member>
+        <member name="P:Smart.Mock.Data.MockDbCommand.UpdatedRowSource">
+             <summary>
+            
+             </summary>
+        </member>
+        <member name="M:Smart.Mock.Data.MockDbCommand.#ctor">
+             <summary>
+            
+             </summary>
+        </member>
+        <member name="M:Smart.Mock.Data.MockDbCommand.Dispose">
+             <summary>
+            
+             </summary>
+        </member>
+        <member name="M:Smart.Mock.Data.MockDbCommand.Prepare">
+             <summary>
+            
+             </summary>
+        </member>
+        <member name="M:Smart.Mock.Data.MockDbCommand.Cancel">
+             <summary>
+            
+             </summary>
+        </member>
+        <member name="M:Smart.Mock.Data.MockDbCommand.CreateParameter">
+             <summary>
+            
+             </summary>
+             <returns></returns>
+        </member>
+        <member name="M:Smart.Mock.Data.MockDbCommand.ExecuteNonQuery">
+             <summary>
+            
+             </summary>
+             <returns></returns>
+        </member>
+        <member name="M:Smart.Mock.Data.MockDbCommand.ExecuteReader">
+             <summary>
+            
+             </summary>
+             <returns></returns>
+        </member>
+        <member name="M:Smart.Mock.Data.MockDbCommand.ExecuteReader(System.Data.CommandBehavior)">
+             <summary>
+            
+             </summary>
+             <param name="behavior"></param>
+             <returns></returns>
+        </member>
+        <member name="M:Smart.Mock.Data.MockDbCommand.ExecuteScalar">
+             <summary>
+            
+             </summary>
+             <returns></returns>
+        </member>
+        <member name="M:Smart.Mock.Data.MockDbCommand.SetupResult(System.Object)">
+             <summary>
+            
+             </summary>
+             <param name="result"></param>
+        </member>
+        <member name="T:Smart.Mock.Data.MockDbConnection">
+             <summary>
+            
+             </summary>
+        </member>
+        <member name="P:Smart.Mock.Data.MockDbConnection.Commands">
+             <summary>
+            
+             </summary>
+        </member>
+        <member name="P:Smart.Mock.Data.MockDbConnection.Transactions">
+             <summary>
+            
+             </summary>
+        </member>
+        <member name="P:Smart.Mock.Data.MockDbConnection.ConnectionString">
+             <summary>
+            
+             </summary>
+        </member>
+        <member name="P:Smart.Mock.Data.MockDbConnection.ConnectionTimeout">
+             <summary>
+            
+             </summary>
+        </member>
+        <member name="P:Smart.Mock.Data.MockDbConnection.Database">
+             <summary>
+            
+             </summary>
+        </member>
+        <member name="P:Smart.Mock.Data.MockDbConnection.State">
+             <summary>
+            
+             </summary>
+        </member>
+        <member name="M:Smart.Mock.Data.MockDbConnection.Dispose">
+             <summary>
+            
+             </summary>
+        </member>
+        <member name="M:Smart.Mock.Data.MockDbConnection.Open">
+             <summary>
+            
+             </summary>
+        </member>
+        <member name="M:Smart.Mock.Data.MockDbConnection.Close">
+             <summary>
+            
+             </summary>
+        </member>
+        <member name="M:Smart.Mock.Data.MockDbConnection.ChangeDatabase(System.String)">
+             <summary>
+            
+             </summary>
+             <param name="databaseName"></param>
+        </member>
+        <member name="M:Smart.Mock.Data.MockDbConnection.BeginTransaction">
+             <summary>
+            
+             </summary>
+             <returns></returns>
+        </member>
+        <member name="M:Smart.Mock.Data.MockDbConnection.BeginTransaction(System.Data.IsolationLevel)">
+             <summary>
+            
+             </summary>
+             <param name="il"></param>
+             <returns></returns>
+        </member>
+        <member name="M:Smart.Mock.Data.MockDbConnection.CreateCommand">
+             <summary>
+            
+             </summary>
+             <returns></returns>
+        </member>
+        <member name="M:Smart.Mock.Data.MockDbConnection.SetupCommand(Smart.Mock.Data.MockDbCommand)">
+             <summary>
+            
+             </summary>
+             <param name="command"></param>
+        </member>
+        <member name="M:Smart.Mock.Data.MockDbConnection.SetupCommand(System.Action{Smart.Mock.Data.MockDbCommand})">
+             <summary>
+            
+             </summary>
+             <param name="action"></param>
+        </member>
+        <member name="T:Smart.Mock.Data.MockDbParameter">
+             <summary>
+            
+             </summary>
+        </member>
+        <member name="P:Smart.Mock.Data.MockDbParameter.DbType">
+             <summary>
+            
+             </summary>
+        </member>
+        <member name="P:Smart.Mock.Data.MockDbParameter.Direction">
+             <summary>
+            
+             </summary>
+        </member>
+        <member name="P:Smart.Mock.Data.MockDbParameter.IsNullable">
+             <summary>
+            
+             </summary>
+        </member>
+        <member name="P:Smart.Mock.Data.MockDbParameter.ParameterName">
+             <summary>
+            
+             </summary>
+        </member>
+        <member name="P:Smart.Mock.Data.MockDbParameter.SourceColumn">
+             <summary>
+            
+             </summary>
+        </member>
+        <member name="P:Smart.Mock.Data.MockDbParameter.Value">
+             <summary>
+            
+             </summary>
+        </member>
+        <member name="P:Smart.Mock.Data.MockDbParameter.SourceColumnNullMapping">
+             <summary>
+            
+             </summary>
+        </member>
+        <member name="P:Smart.Mock.Data.MockDbParameter.Size">
+             <summary>
+            
+             </summary>
+        </member>
+        <member name="M:Smart.Mock.Data.MockDbParameter.ResetDbType">
+             <summary>
+            
+             </summary>
+        </member>
+        <member name="T:Smart.Mock.Data.MockDbParameterCollection">
+             <summary>
+            
+             </summary>
+        </member>
+        <member name="P:Smart.Mock.Data.MockDbParameterCollection.Command">
+             <summary>
+            
+             </summary>
+        </member>
+        <member name="M:Smart.Mock.Data.MockDbParameterCollection.#ctor(Smart.Mock.Data.MockDbCommand)">
+             <summary>
+            
+             </summary>
+             <param name="command"></param>
+        </member>
+        <member name="M:Smart.Mock.Data.MockDbParameterCollection.Contains(System.String)">
+             <summary>
+            
+             </summary>
+             <param name="parameterName"></param>
+             <returns></returns>
+        </member>
+        <member name="M:Smart.Mock.Data.MockDbParameterCollection.IndexOf(System.String)">
+             <summary>
+            
+             </summary>
+             <param name="parameterName"></param>
+             <returns></returns>
+        </member>
+        <member name="M:Smart.Mock.Data.MockDbParameterCollection.RemoveAt(System.String)">
+             <summary>
+            
+             </summary>
+             <param name="parameterName"></param>
+        </member>
+        <member name="P:Smart.Mock.Data.MockDbParameterCollection.Item(System.String)">
+             <summary>
+            
+             </summary>
+             <param name="parameterName"></param>
+             <returns></returns>
+        </member>
+        <member name="T:Smart.Mock.Data.MockDbTransaction">
+             <summary>
+            
+             </summary>
+        </member>
+        <member name="P:Smart.Mock.Data.MockDbTransaction.TransactionStatus">
+             <summary>
+            
+             </summary>
+        </member>
+        <member name="P:Smart.Mock.Data.MockDbTransaction.Connection">
+             <summary>
+            
+             </summary>
+        </member>
+        <member name="P:Smart.Mock.Data.MockDbTransaction.IsolationLevel">
+             <summary>
+            
+             </summary>
+        </member>
+        <member name="M:Smart.Mock.Data.MockDbTransaction.#ctor(System.Data.IDbConnection)">
+             <summary>
+            
+             </summary>
+             <param name="connection"></param>
+        </member>
+        <member name="M:Smart.Mock.Data.MockDbTransaction.#ctor(System.Data.IDbConnection,System.Data.IsolationLevel)">
+             <summary>
+            
+             </summary>
+             <param name="connection"></param>
+             <param name="isolationLevel"></param>
+        </member>
+        <member name="M:Smart.Mock.Data.MockDbTransaction.Dispose">
+             <summary>
+            
+             </summary>
+        </member>
+        <member name="M:Smart.Mock.Data.MockDbTransaction.Commit">
+             <summary>
+            
+             </summary>
+        </member>
+        <member name="M:Smart.Mock.Data.MockDbTransaction.Rollback">
+             <summary>
+            
+             </summary>
+        </member>
+        <member name="T:Smart.Mock.Data.TransactionStatus">
+             <summary>
+            
+             </summary>
+        </member>
+        <member name="F:Smart.Mock.Data.TransactionStatus.Unknown">
+             <summary>
+            
+             </summary>
+        </member>
+        <member name="F:Smart.Mock.Data.TransactionStatus.Commited">
+             <summary>
+            
+             </summary>
+        </member>
+        <member name="F:Smart.Mock.Data.TransactionStatus.RollBacked">
+             <summary>
+            
+             </summary>
+        </member>
+    </members>
+</doc>

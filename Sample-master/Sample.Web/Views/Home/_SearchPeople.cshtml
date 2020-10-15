@@ -1,0 +1,55 @@
+﻿@model IEnumerable<Sample.Entity.People>
+<table class="table table-bordered table-hover table-responsive">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Addess</th>
+            <th>Interests</th>
+            <th>Image</th>
+        </tr>
+    </thead>
+    <tbody>
+        @if (Model != null && Model.Count() > 0)
+        {
+            foreach (var people in Model)
+            {
+                <tr>
+                    <td>@people.LastName,&nbsp;@people.FirstName</td>
+                    <td>@people.Age</td>
+                    <td>@people.Address.Street,&nbsp;@people.Address.City&nbsp;-&nbsp;@people.Address.Zip,&nbsp;@people.Address.Street</td>
+                    <td>
+                        @if (people.Interests!=null && people.Interests.Count > 0)
+                        {
+                            foreach (var interest in people.Interests)
+                            {
+                                <ul>
+                                    <li>@interest.Interest</li>
+                                </ul>
+                            }
+                        }
+                    </td>
+                    <td>
+                        @if (people.PeopleImage!=null && people.PeopleImage.Image!=null)
+                        {
+                            var base64 = Convert.ToBase64String(people.PeopleImage.Image);
+                            var imgSrc = String.Format("data:image/gif;base64,{0}", base64);
+                        <img src="@imgSrc" style="height:50px; width:50px;" />
+                        }
+                        else
+                        { 
+                            @:Image not available.
+                        }
+                    </td>
+                </tr>
+            }
+        }
+        else
+        {
+            <tr>
+                <td colspan="5" class="text-center">No result found.</td>
+            </tr>
+        }
+
+    </tbody>
+</table>

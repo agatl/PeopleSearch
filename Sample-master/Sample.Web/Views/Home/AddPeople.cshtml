@@ -1,0 +1,107 @@
+﻿@model Sample.Web.Models.PeopleViewModel
+
+@{
+    ViewBag.Title = "Add People";
+}
+
+
+@using (Html.BeginForm("AddPeople","Home",FormMethod.Post,new { enctype = "multipart/form-data" })) 
+{
+    <div class="panel panel-primary">
+        <div class="panel-heading">
+            : : @ViewBag.Title : :
+        </div>
+        <div class="panel-body">
+            <fieldset>
+                @Html.AntiForgeryToken()
+
+                <div class="form-horizontal">
+                    @Html.ValidationSummary(true)
+                    <div class="form-group">
+                        @Html.LabelFor(model => model.People.FirstName, new { @class = "control-label col-md-2" })
+                        <div class="col-md-10">
+                            @Html.TextBoxFor(model => model.People.FirstName, new {@class="width-100" })
+                            @Html.ValidationMessageFor(model => model.People.FirstName)
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        @Html.LabelFor(model => model.People.LastName, new { @class = "control-label col-md-2" })
+                        <div class="col-md-10">
+                            @Html.TextBoxFor(model => model.People.LastName, new { @class = "width-100" })
+                            @Html.ValidationMessageFor(model => model.People.LastName)
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        @Html.LabelFor(model => model.People.Age, new { @class = "control-label col-md-2" })
+                        <div class="col-md-10">
+                            @Html.TextBoxFor(model => model.People.Age, new { @class = "width-100" })
+                            @Html.ValidationMessageFor(model => model.People.Age)
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        @Html.LabelFor(model => model.People.Address.Street, new { @class = "control-label col-md-2" })
+                        <div class="col-md-10">
+                            @Html.TextBoxFor(model => model.People.Address.Street, new { @class = "width-100" })
+                            @Html.ValidationMessageFor(model => model.People.Address.Street)
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        @Html.LabelFor(model => model.People.Address.City, new { @class = "control-label col-md-2" })
+                        <div class="col-md-10">
+                            @Html.TextBoxFor(model => model.People.Address.City, new { @class = "width-100" })
+                            @Html.ValidationMessageFor(model => model.People.Address.City)
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        @Html.LabelFor(model => model.People.Address.Zip, new { @class = "control-label col-md-2" })
+                        <div class="col-md-10">
+                            @Html.TextBoxFor(model => model.People.Address.Zip, new { @class = "width-100" })
+                            @Html.ValidationMessageFor(model => model.People.Address.Zip)
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        @Html.LabelFor(model => model.People.Address.State, new { @class = "control-label col-md-2" })
+                        <div class="col-md-10">
+                            @Html.TextBoxFor(model => model.People.Address.State, new { @class = "width-100" })
+                            @Html.ValidationMessageFor(model => model.People.Address.State)
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        @Html.Label("Interests", new { @class = "control-label col-md-2" })
+                        <div class="col-md-10">
+                            @Html.ListBoxFor(model => model.PeopleInterest, new List<SelectListItem>
+                        {
+                            new SelectListItem(){Text="Coading",Value="Coading"},
+                            new SelectListItem(){Text="Programming",Value="Programming"},
+                            new SelectListItem(){Text="Surfing",Value="Surfing"},
+                            new SelectListItem(){Text="Reading",Value="Reading"},
+                            new SelectListItem(){Text="Gaming",Value="Gaming"},
+                            new SelectListItem(){Text="Travelling",Value="Travelling"},
+                        }, new {@class="width-100" })
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        @Html.Label("Image", new { @class = "control-label col-md-2" })
+                        <div class="col-md-10">
+                            <input type="file" id="Image" name="Image" class="btn-info" />
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-md-offset-2 col-md-10">
+                            <input type="reset" value="Clear" class="btn btn-success" />
+                            <input type="submit" value="Add" class="btn btn-success" />
+                        </div>
+                    </div>
+                </div>
+            </fieldset>
+            
+        </div>
+    </div>
+    
+    
+}
+
+@section Scripts
+{
+    @Scripts.Render("~/bundles/jqueryvalidate")    
+}

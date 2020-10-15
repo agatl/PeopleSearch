@@ -1,0 +1,27 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+<div id="divLoad" style="display:none;"></div>
+<div class="row">
+    <div class="col-md-12">
+        <div class="panel panel-primary">
+            <div class="panel-heading">
+                : : Search People : :
+                <div class="pull-right"><a class="text-primary" href="@Url.Action("AddPeople","Home")">Add People</a></div>
+            </div>
+            <div class="panel-body">
+                <div class="pull-right">
+                    <input type="text" placeholder="Enter first/ last name" id="txtSearch" />
+                </div><br /><br />
+                <div id="divPeople">
+                    @Html.Partial("_SearchPeople")
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="ajaxLoader" id="__AjaxLoader" style="display:none;"></div>
+@section Scripts
+{
+    @Scripts.Render("~/bundles/People")
+}
